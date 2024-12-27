@@ -13,7 +13,7 @@ This is Official Pytorch Implementation for the paper "Learning Discriminative D
 The paper is available at [Link](https://arxiv.org/abs/2405.19902).
 
 <p align="center">
-  <img src="https://github.com/kimsu55/DynaCor/blob/main/img/main.jpg" width="500" title="The overall framework of DynaCor">
+  <img src="https://github.com/kimsu55/DynaCor/blob/main/img/main.jpg" width="900" title="The overall framework of DynaCor">
 </p>
 
 ## Run  
