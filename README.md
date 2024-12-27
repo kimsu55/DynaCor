@@ -3,8 +3,8 @@
 <p align="center">   
     <a href="https://pytorch.org/" alt="PyTorch">
       <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?e&logo=PyTorch&logoColor=white" /></a>
-    <a href="https://cvpr2023.thecvf.com/" alt="Conference">
-        <img src="https://img.shields.io/badge/CVPR'23-brightgreen" /></a>
+    <a href="https://cvpr.thecvf.com/Conferences/2024" alt="Conference">
+        <img src="https://img.shields.io/badge/CVPR'24-brightgreen" /></a>
 </p>
 
 
