@@ -1,0 +1,77 @@
+{   
+    "seed": 0,
+    "random_state":0, 
+    "root_dir": "../data",
+    "save_dir": "./data_rep",
+    "result_dir":"./results",
+    "num_workers": 1,
+    "num_org_samples":50000,
+    "batch_size":128,
+    "rep_dim":512,
+    "optim":"adam",
+    
+    "num_epochs_cluster":15,
+
+    "configs": {
+        
+        "cifar10": {
+            "num_classes": 10, 
+            "label_file_path":"../data/CIFAR-N/CIFAR-10_human.pt",
+            
+            "configs":{
+                
+                "resnet":{
+                    "transforms":{
+                        "train":"transform_10_weak",
+                        "cor":"transform_10_weak",
+                        "test":"transform_10_none"},
+                    "num_epochs": 100,
+                    "lr": 0.1,
+                    "lr_scheduler":"multi",
+                    "resent_crop_size":4
+                    },
+                
+                "clip":{
+                    "transforms":{
+                        "train":"transform_clip_none",
+                        "cor":"transform_clip_flip",
+                        "test":"transform_clip_none"
+                    },
+                    "num_epochs": 20,
+                    "lr": 0.02,
+                    "lr_scheduler": "cosine"
+                    }
+                }},   
+        
+        
+    "cifar100": {
+        "num_classes": 100,
+        "label_file_path":"../data/CIFAR-N/CIFAR-100_human.pt",
+        
+        "configs":{
+            "resnet":{
+                "transforms":{
+                    "train":"transform_100_weak",
+                    "cor":"transform_100_weak",
+                    "test":"transform_100_none"},
+                "num_epochs": 100,
+                "lr": 0.1,
+                "lr_scheduler":"multi",
+                "resent_crop_size":4
+                },
+            "clip":{
+                "transforms":{
+                    "train":"transform_clip_none",
+                    "cor":"transform_clip_flip",
+                    "test":"transform_clip_none"
+                    
+                },
+                "num_epochs": 20,
+                "lr": 0.02,
+                "lr_scheduler": "cosine"
+                }
+            }
+        
+        }
+    }
+}
